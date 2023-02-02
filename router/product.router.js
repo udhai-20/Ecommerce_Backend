@@ -5,6 +5,8 @@ const {
   all_product_get,
   update_Product,
   delete_products,
+  addwishlist,
+  rating,
 } = require("../controller/product.controller");
 const { protection, isAdmin } = require("../middleware/protection.user");
 const productRouter = Router();
@@ -14,5 +16,7 @@ productRouter.route("/get").get(all_product_get);
 productRouter.route("/edit/:id").put(protection, isAdmin, update_Product);
 productRouter.route("/del/:id").delete(protection, isAdmin, delete_products);
 productRouter.route("/:id").get(product_get);
+productRouter.route("/wishlist").put(protection, addwishlist);
+productRouter.route("/rating").put(protection, rating);
 
 module.exports = { productRouter };

@@ -26,14 +26,18 @@ const blogSchema = new mongoose.Schema(
       type: Boolean,
       default: false,
     },
-    likes: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "User",
-    },
-    dislikes: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "User",
-    },
+    likes: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "User",
+      },
+    ],
+    dislikes: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "User",
+      },
+    ],
     image: {
       type: String,
       default:
@@ -45,7 +49,7 @@ const blogSchema = new mongoose.Schema(
     },
   },
   {
-    toJson: {
+    toJSON: {
       virtuals: true,
     },
 

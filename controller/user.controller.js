@@ -114,7 +114,7 @@ const handle_logout = asyncHandler(async (req, res) => {
 const user_all = asyncHandler(async (req, res) => {
   try {
     console.log("cheking", req.user);
-    let user = await UserModel.find();
+    let user = await UserModel.find().populate("wishlist");
     res.send({
       totalData: user.length,
       data: user,

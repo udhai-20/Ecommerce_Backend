@@ -13,6 +13,10 @@ require("dotenv").config();
 const cookie = require("cookie-parser");
 const { productRouter } = require("./router/product.router");
 const { blogRouter } = require("./router/blog.router");
+const { categoryRouter } = require("./router/productcategory.router");
+const { blogcategoryRouter } = require("./router/blogcategory.router");
+const { brandRouter } = require("./router/brand.router");
+const { couponRouter } = require("./router/coupon.router");
 let port = process.env.PORT || 8081;
 //middleware's default
 app.use(morgan(`dev`));
@@ -30,6 +34,14 @@ app.use("/user", userRouter);
 app.use("/product", productRouter);
 //blog_route
 app.use("/blog", blogRouter);
+//cateory route
+app.use("/prod-category", categoryRouter);
+//blog-category route
+app.use("/blog-category", blogcategoryRouter);
+//brand route
+app.use("/brand", brandRouter);
+//coupon route
+app.use("/coupon", couponRouter);
 
 //error handlers
 app.use(notFound);
