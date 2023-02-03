@@ -3,6 +3,7 @@ const { UserModel } = require("../model/user.model");
 const asyncHandler = require("express-async-handler");
 const slugify = require("slugify");
 const { validateId } = require("../utils/mongo_id_validation");
+const { cloudinaryupload } = require("../utils/cloudinary");
 
 //createProduct
 const create_Product = asyncHandler(async (req, res) => {
@@ -216,6 +217,36 @@ const rating = asyncHandler(async (req, res) => {
   }
 });
 
+//upload images
+
+const uploadImages = asyncHandler(async (req, res) => {
+  const { id } = req.params;
+  validateId(id);
+  try {
+    const uploader = (path) => cloudinaryupload(path, "images");
+    const url = [];
+    const files = req.files;
+    for (const file of files) {
+      console.log("for of loop", file, files);
+      const { path } = file;
+      const newpath = await uploader(path);
+      url.push(newpath);
+    }
+    const findProduct = await ProductModel.findByIdAndUpdate(
+      id,
+      {
+        images: url.map((file) => file),
+      },
+      {
+        new: true,
+      }
+    );
+    res.status(200).send({ findProduct });
+  } catch (err) {
+    throw new Error(err);
+  }
+});
+
 module.exports = {
   product_get,
   create_Product,
@@ -224,4 +255,5 @@ module.exports = {
   delete_products,
   addwishlist,
   rating,
+  uploadImages,
 };
