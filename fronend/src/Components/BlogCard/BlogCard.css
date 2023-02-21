@@ -1,0 +1,36 @@
+.blog-card {
+    background-color: white !important;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.blog-card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.blog-content {
+    padding: 3px;
+}
+
+.blog-content .date {
+    font-size: 13px;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: var(--color-777);
+
+}
+
+.blog-content h5 {
+    font-size: .99rem;
+    color: var(--color-131931);
+    overflow: hidden;
+}
+
+.blog-content .desc {
+    font-size: .875rem;
+    line-height: 1.3rem;
+    color: var(--color--777);
+}

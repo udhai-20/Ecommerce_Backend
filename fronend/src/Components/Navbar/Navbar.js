@@ -31,7 +31,7 @@ function Navbar(props) {
             <div className="col-2">
               <h2>
                 <Link to="/" className="text-white">
-                  Developers
+                  Dev
                 </Link>
               </h2>
             </div>
@@ -161,7 +161,7 @@ function Navbar(props) {
                     <NavLink to="/" className={"text-white"}>
                       Home
                     </NavLink>
-                    <NavLink to="/" className={"text-white"}>
+                    <NavLink to="/store" className={"text-white"}>
                       Our Store
                     </NavLink>
                     <NavLink to="/" className={"text-white"}>

@@ -1,8 +1,11 @@
 /* //home page */
-
 .main-banner-content {
     top: 10%;
     left: 5%;
+}
+
+.home-wrapper-1 {
+    margin-top: 20px;
 }
 
 .main-banner-content h4 {
@@ -29,4 +32,111 @@
     line-height: 1.5 em;
     letter-spacing: 0.4;
     color: var(--color-131921);
+}
+
+.button {
+    background-color: var(--color-232f3e);
+    color: white;
+    font-size: .975em;
+    padding: 13px 33px;
+    border-radius: 1.5em;
+}
+
+.button:hover {
+    background-color: var(--color-bf4800);
+}
+
+/* //small panner */
+.small-banner-content {
+    top: 20%;
+    left: 5%;
+}
+
+.small-banner-content h4 {
+    font-size: .9em;
+    font-weight: 400;
+    line-height: 1.5rem;
+    margin: 0 0 12px;
+    color: var(--color-bf4800);
+    letter-spacing: 0.1px;
+    text-transform: uppercase;
+}
+
+.small-banner-content h5 {
+    font-size: 1.3em;
+    font-weight: 500;
+    line-height: 1.3rem;
+
+    letter-spacing: -2px;
+    text-transform: none;
+}
+
+.small-banner {
+    width: 49%;
+}
+
+.small-banner-content p {
+    font-size: .975em;
+    line-height: 1.3 em;
+    letter-spacing: 0.4;
+    color: var(--color-131921)
+}
+
+.home-wrapper-2 {
+    margin-top: 12px;
+    border-radius: 10px;
+    background-color: var(--color-f5f5f4);
+}
+
+.categories {
+    background-color: white;
+    box-shadow: 0 0 10px #0000001a;
+    padding: 15px;
+    /* border: 1px solid #000000; */
+}
+
+.categories>div {
+    width: 25%;
+    padding: 10px 10px 10px 20px;
+}
+
+.categories>div>div {
+    width: 60%;
+}
+
+.categories>div:nth-child(1),
+.categories>div:nth-child(2),
+.categories>div:nth-child(3),
+.categories>div:nth-child(4) {
+    border-bottom: 1px solid var(--color-ededed);
+
+}
+
+.categories>div:nth-child(1),
+.categories>div:nth-child(2),
+.categories>div:nth-child(3) {
+    border-right: 1px solid var(--color-ededed);
+
+}
+
+
+.categories>div:nth-child(5),
+.categories>div:nth-child(6),
+.categories>div:nth-child(7) {
+    border-right: 1px solid var(--color-ededed);
+
+}
+
+
+.card-wrapper {
+    background-color: white;
+    box-shadow: 0 0 10px #0000001a;
+    padding: 15px;
+}
+
+.section-heading {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 500;
+    margin-bottom: 20px;
 }

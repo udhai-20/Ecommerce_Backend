@@ -1,0 +1,18 @@
+.special-product-card {
+    padding: 20px 10px;
+    border-radius: 10px;
+    background-color: white;
+    /* border: 1px solid red; */
+}
+
+.special-product-card .badge {
+    background-color: #fc3535 !important;
+}
+
+/* .special-prod-image {
+    width: 220px;
+}
+
+.special-prod-image img {
+    width: 100%;
+} */
