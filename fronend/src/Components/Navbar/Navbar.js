@@ -54,7 +54,7 @@ function Navbar(props) {
                 <div>
                   <Link
                     className="d-flex align-items-center gap-10 text-white"
-                    to="/"
+                    to="/compareproducts"
                   >
                     <img src="images/compare.svg" alt="Compare" />
                     <p className="mb-0">
@@ -65,7 +65,7 @@ function Navbar(props) {
                 <div>
                   <Link
                     className="d-flex align-items-center gap-10 text-white"
-                    to="/"
+                    to="/wishlist"
                   >
                     <img src="images/wishlist.svg" alt="wishlist" />
                     <p className="mb-0">
@@ -77,7 +77,7 @@ function Navbar(props) {
                 <div>
                   <Link
                     className="d-flex align-items-center gap-10 text-white"
-                    to="/"
+                    to="/login"
                   >
                     <img src="images/user.svg" alt="user" />
                     <p className="mb-0">
@@ -88,7 +88,7 @@ function Navbar(props) {
                 <div>
                   <Link
                     className="d-flex align-items-center gap-10 text-white"
-                    to="/"
+                    to="/cart"
                   >
                     <img src="images/cart.svg" alt="cart" />
                     <div className="d-flex flex-column gap-10">
@@ -167,7 +167,7 @@ function Navbar(props) {
                     <NavLink to="/blog" className={"text-white"}>
                       Blog
                     </NavLink>
-                    <NavLink to="/" className={"text-white"}>
+                    <NavLink to="/contact" className={"text-white"}>
                       Contact
                     </NavLink>
                   </div>

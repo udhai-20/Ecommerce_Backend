@@ -1,0 +1,33 @@
+.contact-innerwrapper {
+    padding: 1.5rem;
+    border-radius: 1.2rem;
+    background-color: white;
+}
+
+.contact-innerwrapper>div {
+    width: 48%;
+}
+
+.contact-title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2.1rem;
+    text-align: left;
+}
+
+.contact-innerwrapper form .form-control {
+    background-color: var(--color-f5f5f7);
+    border-radius: .875rem;
+    border-color: transparent;
+}
+
+.contact-innerwrapper ul {
+    list-style: none;
+
+}
+
+.contact-innerwrapper address,
+.contact-innerwrapper a,
+.contact-innerwrapper p {
+    color: var(--color-f777);
+}

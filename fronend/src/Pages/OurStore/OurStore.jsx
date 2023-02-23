@@ -4,6 +4,7 @@ import "./OurStore.css";
 import Meta from "../../Components/MetaComponent/Meta";
 import ReactStars from "react-rating-stars-component";
 import ProductCard from "../../Components/ProductCard/ProductCard";
+import Colors from "../../Components/Colors/Colors";
 
 function OurStore(props) {
   const [grid, setGrid] = useState(4);
@@ -51,28 +52,7 @@ function OurStore(props) {
                 <h3 className="sub-title"> Colors</h3>
                 <div>
                   <div className="d-flex flex-wrap">
-                    <ul className="colors d-flex flex-wrap gap-10 ps-8">
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                    </ul>
+                    <Colors />
                   </div>
                 </div>
               </div>
