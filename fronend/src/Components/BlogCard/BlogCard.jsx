@@ -16,7 +16,7 @@ function BlogCard(props) {
               lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
               lorem lorem lorem lorem lorem lorem lorem
             </p>
-            <Link to="/" className="button">
+            <Link to="/blog/:id" className="button">
               ReadMore
             </Link>
           </div>

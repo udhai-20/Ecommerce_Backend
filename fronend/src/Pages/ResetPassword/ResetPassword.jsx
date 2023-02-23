@@ -1,29 +1,19 @@
 import React from "react";
-import BreadCrums from "../../Components/BreadCrums/BreadCrums";
-import "./Login.css";
 import Meta from "../../Components/MetaComponent/Meta";
-import { Link, useNavigate } from "react-router-dom";
-function Login(props) {
-  const navigate = useNavigate();
+import BreadCrums from "../../Components/BreadCrums/BreadCrums";
+import { Link } from "react-router-dom";
+function ResetPassword(props) {
   return (
-    <div>
-      <Meta title={"Login"} />
-      <BreadCrums title="Login" />
+    <>
+      <Meta title={"Reset Password"} />
+      <BreadCrums title="Reset Password" />
       <div className="login-wrapper py-5 home-wrapper-2">
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">
               <div className="login-card">
-                <h3 className="text-center mb-3">Login</h3>
+                <h3 className="text-center mb-3">Reset Password</h3>
                 <form action="" className="d-flex flex-column gap-30">
-                  <div>
-                    <input
-                      type="email"
-                      name="email"
-                      className="form-control"
-                      placeholder="email"
-                    />
-                  </div>
                   <div>
                     <input
                       type="password"
@@ -32,15 +22,17 @@ function Login(props) {
                       placeholder="password"
                     />
                   </div>
-                  <Link to="/forget-password">Forget Password?</Link>
+                  <div>
+                    <input
+                      type="password"
+                      name="confirmpassword"
+                      className="form-control"
+                      placeholder="confirm password"
+                    />
+                  </div>
+
                   <div className="mt-2 d-flex justify-content-center gap-10">
-                    <button className="button login">Login</button>
-                    <button
-                      className="button signup"
-                      onClick={() => navigate("/signup")}
-                    >
-                      Sigup
-                    </button>
+                    <button className="button border-0">Reset</button>
                   </div>
                 </form>
               </div>
@@ -48,8 +40,8 @@ function Login(props) {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
-export default Login;
+export default ResetPassword;

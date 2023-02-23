@@ -5,9 +5,10 @@ import Meta from "../../Components/MetaComponent/Meta";
 import ReactStars from "react-rating-stars-component";
 import ProductCard from "../../Components/ProductCard/ProductCard";
 import Colors from "../../Components/Colors/Colors";
-
+import { useNavigate } from "react-router-dom";
 function OurStore(props) {
   const [grid, setGrid] = useState(4);
+  const navigate = useNavigate();
   // alert(grid);
   return (
     <div>

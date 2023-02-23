@@ -1,0 +1,16 @@
+.single-blog-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color--1c1c1b);
+}
+
+.single-blog-card p {
+    color: var(--color-777);
+    font-size: .975rem;
+}
+
+.single-blog-card a {
+    font-size: .975rem;
+    color: var(--color-777);
+    margin-bottom: 1rem;
+}

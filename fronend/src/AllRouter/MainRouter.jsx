@@ -11,6 +11,10 @@ import CompareProduct from "../Pages/Compare Product/CompareProduct";
 import Wishlist from "../Pages/Wishlist/Wishlist";
 import Login from "../Pages/Login & Signup/Login";
 import Signup from "../Pages/Login & Signup/Signup";
+import ForgetPassword from "../Pages/ForgetPassword/ForgetPassword";
+import ResetPassword from "../Pages/ResetPassword/ResetPassword";
+import SingleBlog from "../Pages/SingleBlog/SingleBlog";
+import SingleProduct from "../Pages/SingleProduct/SingleProduct";
 function MainRouter(props) {
   return (
     <>
@@ -20,12 +24,16 @@ function MainRouter(props) {
             <Route index element={<Home />} />
             <Route path="about" element={<About />} />
             <Route path="/store" element={<OurStore />} />
+            <Route path="/single-product/:id" element={<SingleProduct />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:id" element={<SingleBlog />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/compareproducts" element={<CompareProduct />} />
             <Route path="/wishlist" element={<Wishlist />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
+            <Route path="/forget-password" element={<ForgetPassword />} />
+            <Route path="/reset-password" element={<ResetPassword />} />
           </Route>
         </Routes>
       </BrowserRouter>
