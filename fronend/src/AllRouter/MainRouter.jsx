@@ -15,6 +15,10 @@ import ForgetPassword from "../Pages/ForgetPassword/ForgetPassword";
 import ResetPassword from "../Pages/ResetPassword/ResetPassword";
 import SingleBlog from "../Pages/SingleBlog/SingleBlog";
 import SingleProduct from "../Pages/SingleProduct/SingleProduct";
+import RefundPolicy from "../Pages/RefundPolicy/RefundPolicy";
+import PrivacyPolicy from "../Pages/PrivacyPolicy/PrivacyPolicy";
+import ShippingPolicy from "../Pages/ShippingPolicy/ShippingPolicy";
+import TermsAndCondition from "../Pages/TermsAndCondition/TermsAndCondition";
 function MainRouter(props) {
   return (
     <>
@@ -34,6 +38,10 @@ function MainRouter(props) {
             <Route path="/signup" element={<Signup />} />
             <Route path="/forget-password" element={<ForgetPassword />} />
             <Route path="/reset-password" element={<ResetPassword />} />
+            <Route path="/refund-policy" element={<RefundPolicy />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/shipping-policy" element={<ShippingPolicy />} />
+            <Route path="/terms-condition" element={<TermsAndCondition />} />
           </Route>
         </Routes>
       </BrowserRouter>
