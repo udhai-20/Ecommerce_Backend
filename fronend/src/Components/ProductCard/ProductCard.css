@@ -23,13 +23,14 @@
 
 .action-bar {
     top: 10%;
-    right: -23px;
+    left: -23px;
     transition: 0.3s;
 }
 
 .product-card:hover .action-bar {
-    right: 0px;
-    left: 4px;
+
+    /* right: 0px; */
+    left: 0px;
 }
 
 .product-card .product-image>img:last-child {

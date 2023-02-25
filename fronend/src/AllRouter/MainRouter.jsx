@@ -19,6 +19,8 @@ import RefundPolicy from "../Pages/RefundPolicy/RefundPolicy";
 import PrivacyPolicy from "../Pages/PrivacyPolicy/PrivacyPolicy";
 import ShippingPolicy from "../Pages/ShippingPolicy/ShippingPolicy";
 import TermsAndCondition from "../Pages/TermsAndCondition/TermsAndCondition";
+import Cart from "../Pages/Cart/Cart";
+import Checkout from "../Pages/Checkout/Checkout";
 function MainRouter(props) {
   return (
     <>
@@ -42,6 +44,8 @@ function MainRouter(props) {
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/shipping-policy" element={<ShippingPolicy />} />
             <Route path="/terms-condition" element={<TermsAndCondition />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/checkout" element={<Checkout />} />
           </Route>
         </Routes>
       </BrowserRouter>

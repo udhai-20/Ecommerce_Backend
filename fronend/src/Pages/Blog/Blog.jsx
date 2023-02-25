@@ -2,12 +2,13 @@ import React from "react";
 import BreadCrums from "../../Components/BreadCrums/BreadCrums";
 import Meta from "../../Components/MetaComponent/Meta";
 import BlogCard from "../../Components/BlogCard/BlogCard";
+import Hoc from "../../Components/Hoc/Hoc";
 function Blog(props) {
   return (
     <>
       <Meta title={"Our Blogs"} />
       <BreadCrums title="Our Blogs" />
-      <div className="blog-wrapper home-wrapper-2 py-5">
+      <Hoc class1="blog-wrapper home-wrapper-2 py-5">
         <div className="container-xxl">
           <div className="row">
             <div className="col-3">
@@ -41,7 +42,7 @@ function Blog(props) {
             </div>
           </div>
         </div>
-      </div>
+      </Hoc>
     </>
   );
 }

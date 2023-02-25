@@ -56,7 +56,7 @@ function Navbar(props) {
                     className="d-flex align-items-center gap-10 text-white"
                     to="/compareproducts"
                   >
-                    <img src="images/compare.svg" alt="Compare" />
+                    <img src="/images/compare.svg" alt="Compare" />
                     <p className="mb-0">
                       Compare <br /> Products
                     </p>
@@ -67,7 +67,7 @@ function Navbar(props) {
                     className="d-flex align-items-center gap-10 text-white"
                     to="/wishlist"
                   >
-                    <img src="images/wishlist.svg" alt="wishlist" />
+                    <img src="/images/wishlist.svg" alt="wishlist" />
                     <p className="mb-0">
                       Favourite <br /> wishlist
                     </p>
@@ -79,7 +79,7 @@ function Navbar(props) {
                     className="d-flex align-items-center gap-10 text-white"
                     to="/login"
                   >
-                    <img src="images/user.svg" alt="user" />
+                    <img src="/images/user.svg" alt="user" />
                     <p className="mb-0">
                       Login <br /> My Account
                     </p>
@@ -90,7 +90,7 @@ function Navbar(props) {
                     className="d-flex align-items-center gap-10 text-white"
                     to="/cart"
                   >
-                    <img src="images/cart.svg" alt="cart" />
+                    <img src="/images/cart.svg" alt="cart" />
                     <div className="d-flex flex-column gap-10">
                       <span className="badge bg-white text-dark ">0</span>
                       <p className="mb-0">$500</p>
@@ -116,7 +116,7 @@ function Navbar(props) {
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
-                      <img src="images/menu.svg" />
+                      <img src="/images/menu.svg" />
                       <span className="me-5 d-inline-block ">
                         Shop Categories
                       </span>

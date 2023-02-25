@@ -92,7 +92,7 @@
 }
 
 .main-product-details {
-    padding: 1.5rem;
+    padding: 30px 20px;
     background-color: white;
     border-radius: 10px;
 }
@@ -139,4 +139,13 @@
 .main-product-details a {
     font-size: 14 px;
     color: var(--color-777)
+}
+
+.accord-btn {
+    font-size: 18px !important;
+    color: var(--color-1c1c1b) !important;
+}
+
+.addtocompare {
+    cursor: pointer;
 }

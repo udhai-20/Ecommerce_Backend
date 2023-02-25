@@ -5,13 +5,14 @@ import BreadCrums from "../../Components/BreadCrums/BreadCrums";
 import BlogCard from "../../Components/BlogCard/BlogCard";
 import { Link } from "react-router-dom";
 import { HiOutlineArrowLeft } from "react-icons/hi";
+import Hoc from "../../Components/Hoc/Hoc";
 
 function SingleBlog(props) {
   return (
     <>
       <Meta title={"Single Blog"} />
       <BreadCrums title="Single Blog" />
-      <div className="blog-wrapper home-wrapper-2 py-5">
+      <Hoc class1="blog-wrapper home-wrapper-2 py-5">
         <div className="container-xxl">
           <div className="row">
             <div className="col-3"></div>
@@ -40,7 +41,7 @@ function SingleBlog(props) {
             </div>
           </div>
         </div>
-      </div>
+      </Hoc>
     </>
   );
 }
