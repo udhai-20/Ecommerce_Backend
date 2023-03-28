@@ -19,27 +19,33 @@ function Signup(props) {
                 <form action="" className="d-flex flex-column gap-30">
                   <CustomeInput
                     type="text"
-                    name="name"
+                    name="firstname"
                     className="form-control"
-                    placeholder="name"
+                    placeholder="First name"
+                  />
+                  <CustomeInput
+                    type="text"
+                    name="lastname"
+                    className="form-control"
+                    placeholder="Last name"
                   />
                   <CustomeInput
                     type="email"
                     name="email"
                     className="form-control"
-                    placeholder="email"
+                    placeholder="Email"
                   />
                   <CustomeInput
                     type="tel"
                     name="mobile"
                     className="form-control"
-                    placeholder="mobile number"
+                    placeholder="Mobile number"
                   />
                   <CustomeInput
                     type="password"
                     name="password"
                     className="form-control"
-                    placeholder="password"
+                    placeholder="Password"
                   />
 
                   <div className="mt-2 d-flex justify-content-center gap-10">
