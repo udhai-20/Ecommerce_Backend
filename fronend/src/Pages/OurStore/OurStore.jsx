@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./OurStore.css";
 import BreadCrums from "../../Components/BreadCrums/BreadCrums";
 import Meta from "../../Components/MetaComponent/Meta";
@@ -7,10 +7,20 @@ import ProductCard from "../../Components/ProductCard/ProductCard";
 import Colors from "../../Components/Colors/Colors";
 import { Link, useNavigate } from "react-router-dom";
 import Hoc from "../../Components/Hoc/Hoc";
+import { useDispatch, useSelector } from "react-redux";
+import { getAllProducts } from "../../Feature/Products/ProductSlice";
 function OurStore(props) {
+  const dispatch = useDispatch();
   const [grid, setGrid] = useState(4);
   const navigate = useNavigate();
-  // alert(grid);
+  const productSate = useSelector((state) => state.product.product.data);
+  // console.log("productSate:", productSate);
+  const getProducts = () => {
+    dispatch(getAllProducts());
+  };
+  useEffect(() => {
+    getProducts();
+  }, []);
   return (
     <div>
       <Meta title={"Our Store"} />
@@ -223,7 +233,7 @@ function OurStore(props) {
             <Link to="/single-product/:id">
               <div className="product-list pb-3">
                 <div className="d-flex flex-wrap gap-10">
-                  <ProductCard grid={grid} />
+                  <ProductCard data={productSate} grid={grid} />
                 </div>
               </div>
             </Link>

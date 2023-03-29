@@ -1,6 +1,14 @@
 import React from "react";
 
-function CustomeInput({ type, name, className, placeholder }) {
+function CustomeInput({
+  type,
+  name,
+  className,
+  placeholder,
+  value,
+  onChange,
+  onBlur,
+}) {
   return (
     <>
       <input
@@ -8,6 +16,9 @@ function CustomeInput({ type, name, className, placeholder }) {
         name={name}
         placeholder={placeholder}
         className={className}
+        value={value}
+        onChange={onChange}
+        onBlur={onBlur}
       />
     </>
   );
